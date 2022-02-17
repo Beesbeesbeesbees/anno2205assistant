@@ -1,24 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { DifficultyPresetsService } from 'src/domain/difficulty-presets';
 
 import { AppComponent } from './app.component';
-import { PopulationService } from 'src/app/data/populations';
-import { RegionService } from './data/region';
-import { ProductsService, Product } from './data/products';
+import { DifficultyComponent } from './difficulty/difficulty.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DifficultyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [
-    PopulationService,
-    RegionService,
-    ProductsService,
+    DifficultyPresetsService
   ],
   bootstrap: [AppComponent]
 })
