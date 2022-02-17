@@ -1,0 +1,41 @@
+$dark-blue-background: #10263488;
+$light-blue-background: #194153;
+$light-text: #DAE7F0;
+$dark-text: #416678;
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'berka-light';
+    src: url('assets/Berka-Light.ttf');    
+}
+
+html, body, html body {
+    font-family: 'berka-light';
+    font-size: 20px;
+}
+
+.bigText {
+    color: $light-text;
+    font-weight: bold;
+}
+
+.medText {
+    color: $light-text;
+    font-weight: normal;
+}
+
+.smallText {
+    color: $dark-text;
+    font-weight: lighter;
+}
+
+.darkBackground {
+    background-color: $dark-blue-background;    
+    border-color: $light-blue-background;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.lightBackground {
+    background-color: $light-blue-background;    
+}

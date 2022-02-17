@@ -1,0 +1,44 @@
+<div class="difficultyHeader darkBackground">
+    <span class="bigText">World Difficulty</span>    
+</div>
+
+<div class="difficultyLeft lightBackground">
+    <div class="bigText">Workforce</div>
+    <select class="form-control" [(ngModel)]="difficulty.workforceDifficulty" (ngModelChange)="onModelChange()">
+        <option *ngFor="let opt of difficultyPresets.workforceSettings" [value]="opt">{{ opt }}</option>
+    </select>
+    <br />
+
+    <div class="bigText">Consumption</div>
+    <select class="form-control" [(ngModel)]="difficulty.consumptionDifficulty" (ngModelChange)="onModelChange()">
+        <option *ngFor="let opt of difficultyPresets.consumptionSettings" [value]="opt">{{ opt }}</option>
+    </select>
+    <br />
+
+    <div class="bigText">Satisfaction Impact</div>
+    <select class="form-control" [(ngModel)]="difficulty.satisfactionImpactDifficulty" (ngModelChange)="onModelChange()">
+        <option *ngFor="let opt of difficultyPresets.satisfactionSettings" [value]="opt">{{ opt }}</option>
+    </select>
+</div>
+
+<div class="difficultyRight lightBackground">
+    <div class="bigText">Revenue</div>
+    <select class="form-control" [(ngModel)]="difficulty.revenueDifficulty" (ngModelChange)="onModelChange()">
+        <option *ngFor="let opt of difficultyPresets.revenueSettings" [value]="opt">{{ opt }}</option>
+    </select>
+    <br />
+
+    <div class="bigText">Warehouse Output</div>
+    <select class="form-control" [(ngModel)]="difficulty.warehouseOutputDifficulty" (ngModelChange)="onModelChange()">
+        <option *ngFor="let opt of difficultyPresets.warehouseSettings" [value]="opt">{{ opt }}</option>
+    </select>
+</div>
+
+<div class="difficultyPresets darkBackground">
+    <span class="bigText">Load Preset</span>
+    <br />
+    <button type="button" class="btn btn-primary" (click)="setEasy()">Easy</button>
+    <button type="button" class="btn btn-primary" (click)="setMedium()">Medium</button>
+    <button type="button" class="btn btn-primary" (click)="setExpert()">Expert</button>
+    <button type="button" class="btn btn-primary" (click)="setVeteran()">Veteran</button>
+</div>
