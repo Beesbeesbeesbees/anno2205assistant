@@ -42,3 +42,13 @@
     <button type="button" class="btn btn-primary" (click)="setExpert()">Expert</button>
     <button type="button" class="btn btn-primary" (click)="setVeteran()">Veteran</button>
 </div>
+
+<div class="closeContainer lightBackground" (click)="toggle()">
+    <span class="medText fa fa-angle-double-up"></span>
+    <span class="bigText"> Close </span>
+    <span class="medText fa fa-angle-double-up"></span>
+</div>
+
+<div class="openContainer lightBackground" (click)="toggle()" [hidden]="isOpen">
+    <span class="bigText">Difficulty Settings</span>
+</div>

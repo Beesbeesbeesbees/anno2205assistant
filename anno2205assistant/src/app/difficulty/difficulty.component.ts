@@ -10,9 +10,11 @@ import { DifficultyPresetsService } from 'src/domain/difficulty-presets';
 export class DifficultyComponent {
   constructor(public difficultyPresets: DifficultyPresetsService) { }
 
-  @Output() difficultyChangedEvent = new EventEmitter<Difficulty>();
+  @Output() onChange = new EventEmitter<Difficulty>();
+  @Output() onToggle = new EventEmitter();
 
   difficulty: Difficulty = this.difficultyPresets.easy;
+  isOpen: boolean = true;
 
   ngOnInit() {
     this.setVeteran();
@@ -44,7 +46,12 @@ export class DifficultyComponent {
   }
 
   emitChange() {
-    this.difficultyChangedEvent.emit(this.difficulty);
+    this.onChange.emit(this.difficulty);
     console.log(this.difficulty);
+  }
+
+  toggle() {
+    this.isOpen = !this.isOpen;
+    this.onToggle.emit();
   }
 }

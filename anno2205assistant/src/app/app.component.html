@@ -1,7 +1,5 @@
-<div class="pageContainer" style="background-image: url('assets/Rewards_01_Metropolis_16_9.jpg');">
-    App component
-
-    <div class="difficultyContainer">
-        <difficulty></difficulty>
+<div class="pageContainer" style="background-image: url('assets/Rewards_01_Metropolis_16_9.jpg');">    
+    <div class="difficultyContainer" [class.difficultyOpen]="difficultyOpen">
+        <difficulty (onToggle)="toggleDifficultyComponent()"></difficulty>
     </div>
 </div>
