@@ -1,0 +1,226 @@
+.addIsland, .island {
+    margin: 5px 0px 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.buttonTray > * {
+    margin-left: 4px;
+}
+
+.island {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.islandName {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.islandRegion {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.islandNameContainer, .islandHeaderWrapper {
+    text-align: center;    
+}
+
+.islandHeader {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.populationGroup {
+    display: inline-block;
+    text-align: left;
+}
+.populationGroup:not(:first-of-type) {
+    margin-left: 30px;
+}
+
+input[type="number"] {
+    width: 80px;
+    display: inline-block;
+}
+
+.popLabelColumn {
+    width: 87px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.showUnusedToggle {    
+    margin-left: 5px;
+}
+.showUnusedToggle, .showUnusedToggle * {
+    cursor: pointer;
+    z-index: 999999999;
+}
+
+.houseCountColumn {
+    width: auto;
+    display: inline-block;
+}
+.houseCountColumn.hasAddButton .houseCountColumnLabel {
+    margin-left: 63px;
+}
+.houseCountColumn .houseCountColumnLabel {
+    margin-left: 3px;
+}
+.houseCountColumn .populationCountColumnLabel {
+    margin-left: 13px;
+}
+.houseCountColumn.hasAddButton .populationCountColumnLabel {
+    margin-left: 73px;
+}
+.houseCountColumn.header {
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+    position: relative;
+}
+.houseCountColumn.populationCount {    
+    padding-left: 68px;
+}
+.houseCountColumn > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.houseCountColumn > .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.houseCountColumn:last-child {
+    width: 50px;
+}
+
+.addHouseButton {
+    margin-right: 5px;
+}
+.addHouseButton, .houseCountColumn > .btn {
+    text-align: left;
+    width: 50px;
+}
+
+.factories {
+    text-align: center;
+    display: inline-block;
+    line-height: 1;
+}
+
+.factories .factoryNameColumn {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.factoryHeader {
+    font-weight: bold;
+    text-align: center;
+    padding: 1px 2px 1px 9px;
+    margin-bottom: 5px;
+}
+
+.factories input[type="number"] {
+    padding: 1px 5px;
+    height: initial;
+}
+
+.factoryColumn {
+    display: inline-block;    
+    vertical-align: top;
+}
+
+.factoryColumn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.factory {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 1px 0px 8px;
+    background-color: white;
+}
+.factory:last-child {
+    border-bottom: 1px solid gray;
+}
+.factory.unsatisfied {
+    background-color: #FDA8AB;
+}
+.factory.satisfied {
+    background-color: #D5EF9F;
+}
+.factory.slightlyUnsatisfied {
+    background-color: #fff26d;
+}
+.factory.focusedFactory {
+    box-shadow: inset 0px 0px 5px #e756f9
+}
+
+.productivityColumn {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.enabledColumn {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.requiredColumn {
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+.builtColumn {
+    width: 85px;
+    display: inline-block;
+}
+
+.tradeColumn {
+    width: 85px;
+    display: inline-block;
+}
+
+.indent {
+    width: 20px;
+    display: inline-block;
+}
+
+.publicService .hiddenForPublicService {
+    visibility: hidden;
+}
+
+.unbalancedTrade {
+    background-color: #FDA8AB;
+}
+
+.bottomButton {
+    margin-left: 5px;
+}
+
+.brightHarvestToggle {
+    padding: .15rem .3rem !important;
+    font-size: .8rem !important;
+    line-height: 1 !important;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: 0px;
+}
+.brightHarvestToggle.disabled {
+    cursor: not-allowed;
+}
